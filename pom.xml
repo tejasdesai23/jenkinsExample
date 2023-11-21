@@ -42,8 +42,12 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<image>
+						<name>venue2878/jenkins_example:${project.version}</name>
+					</image>  
+					<pullPolicy>IF_NOT_PRESENT</pullPolicy> 
+					<!--<image>
 						<builder>paketobuildpacks/builder-jammy-base:latest</builder>
-					</image>
+					</image>-->
 				</configuration>
 			</plugin>
 		</plugins>
